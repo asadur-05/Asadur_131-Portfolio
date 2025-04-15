@@ -27,7 +27,12 @@ function closemenu(){
 }
 
 //reset function for  the contact-form after submit the form.
-setTimeout(()=>{
-    form.reset();
-},50);
+const btn =document.querySelector(".btn2");
+btn.addEventListener("click", ()=>{
+
+    setTimeout(()=>{
+        form.reset();
+    },250);
+})
+
 
